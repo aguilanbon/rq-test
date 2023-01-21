@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
 
 function Sports() {
   const options = {
@@ -35,14 +36,13 @@ function Sports() {
   return (
     <ul className="flex flex-wrap items-center justify-center">
       {sportsList.map((sport, i) => (
-        <li
-          key={i}
-          className="card card-compact w-72 bg-base-300 shadow-xl m-2 p-4 cursor-pointer hover:-translate-y-2 transition-all ease-linear delay-100"
-        >
-          <div className="card-body">
-            <h2 className="card-title">{sport?.name}</h2>
-          </div>
-        </li>
+        <Link key={i} to={`sports/${sport.id}`}>
+          <li className="card card-compact w-72 bg-base-300 shadow-xl m-2 p-4 cursor-pointer hover:-translate-y-2 transition-all ease-linear delay-100">
+            <div className="card-body">
+              <h2 className="card-title">{sport?.name}</h2>
+            </div>
+          </li>
+        </Link>
       ))}
     </ul>
   );
