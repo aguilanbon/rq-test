@@ -1,28 +1,10 @@
-import axios from "axios";
-import { useEffect } from "react";
-import { useQuery, useQueryClient } from "react-query";
-
+import Sports from "./Sports";
 function App() {
-  const getPokemon = async () => {
-    const result = await axios.get("https://pokeapi.co/api/v2/pokemon");
-    return result.data.results;
-  };
-
-  const { data, isLoading } = useQuery("pokemons", getPokemon);
-
-  if (isLoading) {
-    return <p>loading</p>;
-  }
-
   return (
-    <div className="w-screen min-h-screen">
-      <ul>
-        {data.map((pokemon, i) => (
-          <li key={i}>
-            <p>{pokemon.name}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="max-w-screen min-h-screen flex items-center justify-center">
+      <div className="w-3/4">
+        <Sports />
+      </div>
     </div>
   );
 }
