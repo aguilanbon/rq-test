@@ -1,6 +1,7 @@
 {
     "superheroes": [
     {
+        "id": 1,
         "superhero":"Batman", 
         "publisher":"DC Comics", 
         "alter_ego":"Bruce Wayne",
@@ -8,6 +9,7 @@
         "characters":"Bruce Wayne"
     },
     {
+        "id": 2,
         "superhero":"Superman", 
         "publisher":"DC Comics", 
         "alter_ego":"Kal-El",
@@ -15,6 +17,7 @@
         "characters":"Kal-El"
     },
     {
+        "id": 3,
         "superhero":"Flash", 
         "publisher":"DC Comics", 
         "alter_ego":"Jay Garrick",
@@ -22,6 +25,7 @@
         "characters":"Jay Garrick, Barry Allen, Wally West, Bart Allen"
     },
     {
+        "id": 4,
         "superhero":"Green Lantern", 
         "publisher":"DC Comics", 
         "alter_ego":"Alan Scott",
@@ -29,6 +33,7 @@
         "characters":"Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
     },
     {
+        "id": 5,
         "superhero":"Green Arrow", 
         "publisher":"DC Comics", 
         "alter_ego":"Oliver Queen",
@@ -36,6 +41,7 @@
         "characters":"Oliver Queen"
     },
     {
+        "id": 6,
         "superhero":"Wonder Woman", 
         "publisher":"DC Comics", 
         "alter_ego":"Princess Diana",
@@ -43,6 +49,7 @@
         "characters":"Princess Diana"
     },
     {
+        "id": 7,
         "superhero":"Martian Manhunter", 
         "publisher":"DC Comics", 
         "alter_ego":"J'onn J'onzz",
@@ -50,6 +57,7 @@
         "characters":"Martian Manhunter"
     },
     {
+        "id": 8,
         "superhero":"Robin/Nightwing", 
         "publisher":"DC Comics", 
         "alter_ego":"Dick Grayson",
@@ -57,6 +65,7 @@
         "characters":"Dick Grayson"
     },
     {
+        "id": 9,
         "superhero":"Blue Beetle", 
         "publisher":"DC Comics", 
         "alter_ego":"Dan Garret",
@@ -64,6 +73,7 @@
         "characters":"Dan Garret, Ted Kord, Jaime Reyes"
     },
     {
+        "id": 10,
         "superhero":"Black Canary", 
         "publisher":"DC Comics", 
         "alter_ego":"Dinah Drake",
@@ -71,6 +81,7 @@
         "characters":"Dinah Drake, Dinah Lance"
     },
     {
+        "id": 11,
         "superhero":"Spider Man", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Peter Parker",
@@ -78,6 +89,7 @@
         "characters":"Peter Parker"
     },
     {
+        "id": 12,
         "superhero":"Captain America", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Steve Rogers",
@@ -85,6 +97,7 @@
         "characters":"Steve Rogers"
     },
     {
+        "id": 13,
         "superhero":"Iron Man", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Tony Stark",
@@ -92,6 +105,7 @@
         "characters":"Tony Stark"
     },
     {
+        "id": 14,
         "superhero":"Thor", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Thor Odinson",
@@ -99,6 +113,7 @@
         "characters":"Thor Odinson"
     },
     {
+        "id": 15,
         "superhero":"Hulk", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Bruce Banner",
@@ -106,6 +121,7 @@
         "characters":"Bruce Banner"
     },
     {
+        "id": 16,
         "superhero":"Wolverine", 
         "publisher":"Marvel Comics", 
         "alter_ego":"James Howlett",
@@ -113,6 +129,7 @@
         "characters":"James Howlett"
     },
     {
+        "id": 17,
         "superhero":"Daredevil", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Matthew Michael Murdock",
@@ -120,6 +137,7 @@
         "characters":"Matthew Michael Murdock"
     },
     {
+        "id": 18,
         "superhero":"Hawkeye", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Clinton Francis Barton",
@@ -127,6 +145,7 @@
         "characters":"Clinton Francis Barton"
     },
     {
+        "id": 19,
         "superhero":"Cyclops", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Scott Summers",
@@ -134,6 +153,7 @@
         "characters":"Scott Summers"
     },
     {
+        "id": 20,
         "superhero":"Silver Surfer", 
         "publisher":"Marvel Comics", 
         "alter_ego":"Norrin Radd",

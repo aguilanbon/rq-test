@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import DuplicateHeroes from "./pages/DuplicateHeroes";
+import SingleSuperHero from "./pages/SingleSuperHero";
 import Superheroes from "./pages/Superheroes";
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/duplicate",
         element: <DuplicateHeroes />,
+      },
+      {
+        path: "/superhero/:name",
+        element: <SingleSuperHero />,
       },
     ],
   },

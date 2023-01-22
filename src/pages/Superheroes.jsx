@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useSuperHeroesData } from "../hooks/useSuperheroesData";
 
 function Superheroes() {
@@ -27,18 +28,17 @@ function Superheroes() {
     <div className="w-full h-auto flex items-center justify-center mb-10">
       <ul className="flex flex-wrap">
         {superHeroes?.map((supes, i) => (
-          <div
-            key={i}
-            className="card bg-base-200 rounded-md m-2 cursor-pointer hover:-translate-y-2 ease-out delay-100"
-          >
-            <div className="card card-body">
-              <div className="card card-title">
-                <h2>{supes.superhero}</h2>
-                <div className="badge badge-secondary">{supes.alter_ego}</div>
-                <p className="text-xs text-opacity-10">{supes.publisher}</p>
+          <Link key={i} to={`/superhero/${supes.id}`}>
+            <div className="card bg-base-200 rounded-md m-2 cursor-pointer hover:-translate-y-2 ease-out delay-100">
+              <div className="card card-body">
+                <div className="card card-title">
+                  <h2>{supes.superhero}</h2>
+                  <div className="badge badge-secondary">{supes.alter_ego}</div>
+                  <p className="text-xs text-opacity-10">{supes.publisher}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </ul>
     </div>
