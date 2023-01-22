@@ -4,8 +4,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.css";
-import Sport from "./Sport";
-import Sports from "./Sports";
 
 const router = createBrowserRouter([
   {
