@@ -19,10 +19,6 @@ function Superheroes() {
     return <p className="mt-40">Loading...</p>;
   }
 
-  if (isFetching) {
-    return <p className="mt-40">Fetching...</p>;
-  }
-
   if (isError) {
     return <p className="mt-40">Something went wrong! {error.message}.</p>;
   }
