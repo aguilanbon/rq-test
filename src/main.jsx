@@ -12,10 +12,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
-  {
-    path: "sports/:sportId",
-    element: <Sport />,
-  },
 ]);
 
 const queryClient = new QueryClient();
