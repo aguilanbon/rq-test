@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <DuplicateHeroes />,
       },
       {
-        path: "/superhero/:name",
+        path: "/superhero/:id",
         element: <SingleSuperHero />,
       },
     ],

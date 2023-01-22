@@ -21,9 +21,6 @@ function Superheroes() {
   if (isError) {
     return <p className="mt-40">Something went wrong! {error.message}.</p>;
   }
-
-  console.log(superHeroes);
-
   return (
     <div className="w-full h-auto flex items-center justify-center mb-10">
       <ul className="flex flex-wrap">
