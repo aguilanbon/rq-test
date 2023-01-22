@@ -5,12 +5,21 @@ import { useSuperHeroData } from "../hooks/useSuperHeroData";
 function SingleSuperHero() {
   const { id } = useParams();
 
-  const { data, isLoading, isFetching } = useSuperHeroData(parseInt(id));
+  const { data, isLoading, isFetching, isError, error } = useSuperHeroData(
+    parseInt(id)
+  );
 
-  if (isLoading || isFetching) {
-    return <p>Fetching</p>;
+  if (isLoading) {
+    return <p className="mt-40">Loading...</p>;
   }
 
+  if (isLoading) {
+    return <p className="mt-40">Fetching...</p>;
+  }
+
+  if (isError) {
+    return <p className="mt-40">Something went wrong! {error.message}.</p>;
+  }
   return (
     <div className="hero h-auto bg-base-100">
       <div className="hero-content text-center">

@@ -12,15 +12,21 @@ function Superheroes() {
     isLoading,
     isError,
     error,
+    isFetching,
   } = useSuperHeroesData(options);
 
   if (isLoading) {
+    return <p className="mt-40">Loading...</p>;
+  }
+
+  if (isFetching) {
     return <p className="mt-40">Fetching...</p>;
   }
 
   if (isError) {
     return <p className="mt-40">Something went wrong! {error.message}.</p>;
   }
+
   return (
     <div className="w-full h-auto flex items-center justify-center mb-10">
       <ul className="flex flex-wrap">
