@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import DuplicateHeroes from "./pages/DuplicateHeroes";
 import Superheroes from "./pages/Superheroes";
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Superheroes />,
+      },
+      {
+        path: "/duplicate",
+        element: <DuplicateHeroes />,
       },
     ],
   },

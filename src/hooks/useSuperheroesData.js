@@ -6,7 +6,7 @@ import { useQuery } from "react-query";
         return result.data;
     };
 
-    export const useSuperHeroesData = () => {
-        return useQuery("superheroes", getSuperHeroes);
+    export const useSuperHeroesData = (options) => {
+        return useQuery("superheroes", getSuperHeroes, {enabled: options.enabled});
         
     }

@@ -2,7 +2,16 @@ import React from "react";
 import { useSuperHeroesData } from "../hooks/useSuperheroesData";
 
 function Superheroes() {
-  const { data: superHeroes, isLoading, isError, error } = useSuperHeroesData();
+  const options = {
+    enabled: true,
+  };
+
+  const {
+    data: superHeroes,
+    isLoading,
+    isError,
+    error,
+  } = useSuperHeroesData(options);
 
   if (isLoading) {
     return <p className="mt-40">Fetching...</p>;
