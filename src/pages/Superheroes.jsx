@@ -1,31 +1,21 @@
-import axios from "axios";
 import React from "react";
-import { useQuery } from "react-query";
+import { useSuperHeroesData } from "../hooks/useSuperheroesData";
 
 function Superheroes() {
-  const getSuperHeroes = async () => {
-    const result = await axios.get("http://localhost:4000/superheroes");
-    return result.data;
-  };
-
-  const {
-    data: superHeroes,
-    isLoading,
-    isError,
-  } = useQuery("superheroes", getSuperHeroes);
+  const { data: superHeroes, isLoading, isError, error } = useSuperHeroesData();
 
   if (isLoading) {
-    <p>Fetching...</p>;
+    return <p className="mt-40">Fetching...</p>;
   }
 
   if (isError) {
-    <p>Something went wriong!</p>;
+    return <p className="mt-40">Something went wrong! {error.message}.</p>;
   }
 
   console.log(superHeroes);
 
   return (
-    <div className="w-full h-auto flex items-center justify-center">
+    <div className="w-full h-auto flex items-center justify-center mb-10">
       <ul className="flex flex-wrap">
         {superHeroes?.map((supes, i) => (
           <div
